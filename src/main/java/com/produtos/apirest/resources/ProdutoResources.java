@@ -49,18 +49,24 @@ public class ProdutoResources {
 	@PostMapping("/produtos")
 	@ApiOperation(value = "Adiciona um produto")
 	public Produto salvarProduto(@RequestBody Produto produto) {
+		
 		return produtoRepository.save(produto);
+	
 	}
 	
 	@DeleteMapping("/produtos")
 	@ApiOperation(value = "deleta produto")
 	public void deletaProduto(@RequestBody Produto produto) {
+		
 		produtoRepository.delete(produto);
+		
 	}
 	
 	@PutMapping("/produtos")
 	@ApiOperation(value = "Atualiza os produtos")
 	public Produto atualizaProduto(@RequestBody Produto produto) {
+		
 		return produtoRepository.save(produto);
+		
 	}
 }
