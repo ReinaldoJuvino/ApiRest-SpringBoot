@@ -30,18 +30,6 @@ public class SwaggerConfig {
                 .build()
                 .apiInfo(metaInfo());
     }
-	
-	/*private ApiInfo metaInfo() {
-		
-		
-        return new ApiInfoBuilder()
-            .title("Produtos API REST")
-            .description("API REST de cadastro de produtos.")
-            .version("1.0.0")
-            .license("Apache License Version 2.0")
-            .licenseUrl("https://www.apache.org/licenses/LICENSE-2.0\"")
-            .build();
-}*/
 
    private ApiInfo metaInfo() {
 

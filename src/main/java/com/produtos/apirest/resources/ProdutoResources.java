@@ -65,7 +65,6 @@ public class ProdutoResources {
 	@PutMapping("/produtos")
 	@ApiOperation(value = "Atualiza os produtos")
 	public Produto atualizaProduto(@RequestBody Produto produto) {
-		
 		return produtoRepository.save(produto);
 		
 	}
